@@ -1,0 +1,13 @@
+{
+  "name": "tupian",
+  "version": "1.0.0",
+  "private": true,
+  "description": "拾图：按酒店名称和入住日期管理图片",
+  "scripts": {
+    "start": "python3 -m http.server 8080 --bind 127.0.0.1 --directory dist",
+    "check": "node --check dist/app.js && node --check dist/vendor/jszip.min.js",
+    "test": "node --test tests/*.test.cjs"
+  },
+  "devDependencies": { "fake-indexeddb": "6.2.4" },
+  "engines": { "node": ">=22" }
+}
