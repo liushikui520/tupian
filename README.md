@@ -105,7 +105,7 @@ python3 -m http.server 8080 --bind 127.0.0.1 --directory dist
 
 ## GitHub Pages 自动部署
 
-仓库的 `.github/workflows/pages.yml` 在 `main` 分支每次推送后执行测试，并部署 `dist/`。GitHub Pages 的公开网页只分发程序，浏览器里的图片不会上传到 GitHub。
+仓库的 `.github/workflows/pages.yml` 在 `main` 分支每次推送后执行测试，并部署 `dist/`。GitHub Pages 的公开网页只分发程序，浏览器里的图片不会上传到 GitHub。未开通 Pages 时，工作流会在摘要中提示配置步骤并跳过网页发布。
 
 如果 Fork 到其他仓库：
 
